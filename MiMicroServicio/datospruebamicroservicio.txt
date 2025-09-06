@@ -1,0 +1,18 @@
+INSERT INTO autor (nombre, nacionalidad, fecha_nacimiento, genero_literario) VALUES
+('Gabriel García Márquez', 'Colombiana', '1927-03-06', 'Realismo mágico'),
+('Isabel Allende', 'Chilena', '1942-08-02', 'Novela histórica'),
+('J.K. Rowling', 'Británica', '1965-07-31', 'Fantasía'),
+('Haruki Murakami', 'Japonesa', '1949-01-12', 'Ficción contemporánea'),
+('George Orwell', 'Británica', '1903-06-25', 'Distopía');
+
+
+
+
+INSERT INTO libro (titulo, genero, fecha_publicacion, paginas, editorial, autor_id) VALUES
+('Cien años de soledad', 'Realismo mágico', '1967-06-05', 417, 'Editorial Sudamericana', 1),
+('El amor en los tiempos del cólera', 'Realismo mágico', '1985-09-05', 348, 'Editorial Oveja Negra', 1),
+('La casa de los espíritus', 'Novela histórica', '1982-10-01', 433, 'Editorial Plaza & Janés', 2),
+('Harry Potter y la piedra filosofal', 'Fantasía', '1997-06-26', 223, 'Bloomsbury', 3),
+('Harry Potter y la cámara secreta', 'Fantasía', '1998-07-02', 251, 'Bloomsbury', 3),
+('Kafka en la orilla', 'Ficción contemporánea', '2002-09-12', 505, 'Shinchosha', 4),
+('1984', 'Distopía', '1949-06-08', 328, 'Secker & Warburg', 5);

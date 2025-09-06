@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: mimicroservice-autor
+
+#puerto de la configuracion
+  config:
+    import: optional:configserver:http://localhost:8888

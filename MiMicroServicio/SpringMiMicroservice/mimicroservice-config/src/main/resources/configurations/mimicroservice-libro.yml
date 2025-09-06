@@ -1,0 +1,29 @@
+#puerto en el que va a funcionar mi microservicio de autores
+server:
+  port: 8091
+
+spring:
+  application:
+    name: mimicroservice-libro
+
+
+  #acceso a la base de datos
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mimicroservicio
+    username: root
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+#puerto de eureka con su url
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service.url:
+      defaultZone: http://localhost:8761/eureka
